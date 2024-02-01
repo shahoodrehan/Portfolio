@@ -35,6 +35,7 @@ h1,h2,h3,h4,h5,h6{
   margin: 0rem;
   padding: 0rem;
   line-height: normal;
+  
 }
 p, a, li, button, ul {
   margin: 0;
@@ -122,7 +123,7 @@ span.navbar-text {
     align-items: center;
     justify-content: center;
     line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(148, 137, 137, 0.5);
 }
 .social-icon a::before {
     content: "";
@@ -138,13 +139,13 @@ span.navbar-text {
     transform: scale(1);
 }
 .social-icon a img {
-	width: 40%;
+	width: 60%;
 	z-index: 1;
-	transition: 0.3s ease-in-out;
+	transition: 0.2s ease-in-out;
 }
-.social-icon a:hover img {
-	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
-}
+
+
+
 .navbar-text button {
   font-weight: 700;
   color: #fff;
@@ -226,6 +227,178 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 
+/************ Banner Css ************/
+.banner {
+  margin-top: 0;
+  padding: 180px 0 100px 0;
+  background-image: url('./Assets/img/banner-bg.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.banner h1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+.banner p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+.banner button {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+.banner button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+.banner button:hover svg {
+  margin-left: 25px;
+}
+.banner img {
+  max-width: 50%; /* Ensure it's responsive and fits its parent container */
+  height: 40%; /* Maintain aspect ratio */
+  animation: updown 3s linear infinite;
+  position: absolute;
+  top: 190px;
+  right: 0;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
+/**********Profile Css**************/
+.profile-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  color: #000; /* Change as needed */
+}
+
+.profile-picture img {
+  width: 150px; /* Adjust as needed */
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #000; /* Change as needed */
+  margin-bottom: 20px;
+}
+
+.profile-info {
+  background-color: #f2f2f2; /* Change as needed */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.profile-info h1 {
+  margin: 0;
+  color: #333; /* Change as needed */
+  font-size: 2.5em;
+}
+
+.profile-info p {
+  color: #666; /* Change as needed */
+  line-height: 1.6;
+}
+
+.personal-info p {
+  margin: 10px 0;
+  color: #333; /* Change as needed */
+}
+
+.personal-info strong {
+  color: #000; /* Change as needed */
+}
+
+
+
+/************ Skills Css ************/
+.skill {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+.skill-bx {
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+.skill h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+.skill p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+}
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.skill-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+
+
 
 .App {
   text-align: center;
@@ -265,3 +438,4 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     transform: rotate(360deg);
   }
 }
+
