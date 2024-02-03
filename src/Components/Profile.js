@@ -23,7 +23,7 @@ const Profile = () => {
       <Row>
         <Col xl={4} className="profile-side">
           <Card className="profile-card">
-          <Card.Img className="rounded-image" variant="top" src={myImage} alt="Shahood Rehan" />
+          <Card.Img className="profile-img" variant="top" src={myImage} alt="Shahood Rehan" />
             <Card.Body>
               <Card.Title className="card-title">Muhammad Shahood Rehan <br /> Software Engr.</Card.Title>
               <Card.Text>

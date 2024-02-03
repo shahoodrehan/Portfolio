@@ -366,13 +366,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   font-family: 'Centra', sans-serif !important;
   margin-left: 2%;
-  
+
 }
 
 
 .profile-side {
   padding: 0;
- 
+
 }
 
 .profile-side .profile-card {
@@ -386,9 +386,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Profile.css */
 
 .profile-card .img {
-  border-radius: 90%; /* This creates a circular (rounded) image */
-  width: 40%; /* Adjust the width and height as needed */
-  height: 40%;
+  border-radius: 90%;
+  /* This creates a circular (rounded) image */
+  width: 40%;
+  /* Adjust the width and height as needed */
+  height: 30%;
 }
 
 
@@ -410,51 +412,58 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .profile-info {
   color: #cac7c7;
-font-family: 'Centra', sans-serif !important;
-font-weight: lighter !important;
-  height: fit-content;
+  font-family: 'Centra', sans-serif !important;
+  font-weight: lighter !important;
+
   padding: 3%;
   border-radius: 10px;
-  margin-left: 3%;
-  padding-bottom: 50px;
+
   font-size: 18px;
+
   letter-spacing: 0.8px;
   line-height: 1.5em;
   text-align: left;
-  margin: 40px;
+  margin-left: 30%;
+  top: 42%;
+  position: absolute;
   overflow: hidden;
-  background: linear-gradient(to bottom, #000000, transparent);
-width: 96%;
+
+  width: 96%;
 }
 
 .profile-info .download-cv {
-  
+
   margin-left: 3%;
   background-color: #2e363c;
   position: relative;
   border-color: #2e363c;
+
   &:hover {
-    background-color: #549acd; /* Slightly darker background on hover */
+    background-color: #549acd;
+    /* Slightly darker background on hover */
     transition: 0.4s ease-in-out;
-    color: #fff; /* Readable text color on hover */
-    border-color: #3a454d; 
+    color: #fff;
+    /* Readable text color on hover */
+    border-color: #3a454d;
     color: #000000;
   }
 
 }
 
 .profile-info .hire-me {
-  
+
   margin-left: 30%;
   background-color: #2e363c;
   position: relative;
   border-color: #2e363c;
- 
+
   &:hover {
-    background-color: #549acd; /* Slightly darker background on hover */
+    background-color: #549acd;
+    /* Slightly darker background on hover */
     transition: 0.4s ease-in-out;
-    color: #fff; /* Readable text color on hover */
-    border-color: #3a454d; 
+    color: #fff;
+    /* Readable text color on hover */
+    border-color: #3a454d;
     color: #000000;
   }
 }
@@ -482,11 +491,13 @@ width: 96%;
 }
 
 
-
 /************ Skills Css ************/
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  background-image: url('./Assets/img/color-sharp.png');
+  overflow: hidden;
+  background-repeat: no-repeat;
 }
 
 .skill-bx {
@@ -514,6 +525,7 @@ width: 96%;
   width: 80%;
   margin: 0 auto;
   position: relative;
+
 }
 
 .skill-slider .item img {
@@ -522,12 +534,43 @@ width: 96%;
 }
 
 .background-image-left {
-  top: 28%;
+  top: 1%;
   position: absolute;
   bottom: 0;
-  width: 40%;
+  width: 50%;
+  overflow-y: hidden;
   z-index: -4;
 }
+
+/* .circle-progress {
+  width: 150px;
+  height: 150px;
+  background: conic-gradient(#654ea3 80%, #282828 0%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  color: white;
+  margin: 10px;
+}
+.circle-progress::before {
+  content: '';
+  width: 130px;
+  height: 130px;
+  background: black;
+  border-radius: 50%;
+  z-index: 1000;
+  position: absolute;
+}
+.circle-progress span {
+  z-index: 1001;
+  font-size: 1.5em;
+  position: relative;
+} */
+
+
+
 
 
 

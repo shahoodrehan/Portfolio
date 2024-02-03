@@ -2,7 +2,9 @@ import './App.css';
 import { NavBar } from './Components/Navbar';
 import { Banner } from './Components/Banner';
 import Profile from './Components/Profile';
+import { Skills } from './Components/Skills';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <NavBar />
       <Banner />
       <Profile/>
+      <Skills />
+     
     </div>
   );
 }
