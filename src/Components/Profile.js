@@ -23,7 +23,7 @@ const Profile = () => {
       <Row>
         <Col xl={4} className="profile-side">
           <Card className="profile-card">
-            <Card.Img variant="top" src={myImage} alt="Shahood Rehan" />
+          <Card.Img className="rounded-image" variant="top" src={myImage} alt="Shahood Rehan" />
             <Card.Body>
               <Card.Title className="card-title">Muhammad Shahood Rehan <br /> Software Engr.</Card.Title>
               <Card.Text>
@@ -36,10 +36,9 @@ const Profile = () => {
         </Col>
         <Col xl={7} className="profile-info">
           <h1 className="about-heading">ABOUT ME</h1><br/>
-          <p>I am a dedicated Undergraduate Software Engineer with over 6 months of industry experience and a strong passion for innovative solutions. My expertise includes C# .NET, .NET CORE, ASP.NET, and various web technologies, allowing me to create robust web applications and APIs. Proficient in Microsoft Entity Framework and ADO.NET, I ensure efficient data management for seamless user experiences. On the front-end, I excel in crafting engaging user interfaces using HTML5, CSS, and JavaScript. My experience with React enhances my ability to build modern, dynamic web applications, and I also have a background in WordPress development for user-friendly websites.
-          </p>
-          <br />
-          <p> Backed by industry experience and a commitment to continuous learning, I eagerly embrace new challenges and am keen to collaborate on exciting projects. Let's connect and explore the potential for us to work together in creating exceptional digital experiences</p>
+          <p>I am a dedicated Undergraduate Software Engineer with over 6 months of industry experience and expertise in <strong> C# .NET ASP .NET CORE, Microsoft Entity Framework, ADO.NET,</strong> and various web technologies, allowing me to create robust web applications and APIs. On the front-end, I excel in crafting engaging user interfaces using <strong> HTML5, CSS, JS, React.js and WordPress Development </strong>.</p>
+<br/>
+<p> Backed by industry experience and a commitment to continuous learning, I eagerly embrace new challenges and am keen to collaborate on exciting projects. Let's connect and explore the potential for us to work together in creating exceptional digital experiences</p>
           <Button className="hire-me" onClick={''}><img className='hire-icon' src={hireIcon} alt="Hire me" /> Hire me</Button>
           <Button className="download-cv" onClick={download}> <img className='file' src={downloadIcon} alt="Download" /> Download CV</Button>
         </Col>
