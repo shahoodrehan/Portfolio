@@ -329,11 +329,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner img {
   max-width: 50%;
   height: 25%;
-  /* Maintain aspect ratio */
   animation: updown 3s linear infinite;
   position: absolute;
   top: 190px;
   right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .banner img {
+    max-width: 80%; /* Adjust the maximum width for smaller screens */
+    height: auto;    /* Let the height adjust proportionally */
+    top: auto;       /* Remove the top position */
+    left: auto;         /* Adjust the left position or use another value as needed */
+    right: 0;        /* Remove the right position */
+  }
 }
 
 @keyframes updown {
@@ -414,12 +423,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #cac7c7;
   font-family: 'Centra', sans-serif !important;
   font-weight: lighter !important;
-
   padding: 3%;
   border-radius: 10px;
-
   font-size: 18px;
-
   letter-spacing: 0.8px;
   line-height: 1.5em;
   text-align: left;
@@ -427,7 +433,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   top: 42%;
   position: absolute;
   overflow: hidden;
-
   width: 96%;
 }
 
@@ -484,11 +489,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Add responsive behavior if needed */
 @media (max-width: 768px) {
+  .profile-card {
+    position: relative; /* Set the position relative to allow absolute positioning inside */
+    padding-bottom: 200%; /* Give enough space for the profile info to fit under the image */
+  }
+  
+  .profile-card .img {
+    width: 100%; /* Make image full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* If you want a circular image */
+  }
+
   .profile-info {
-    margin-left: 0;
-    margin-top: 20px;
+    position: absolute; /* Absolute position to place it at the bottom of the profile-card */
+    top:50%; /* Position it right below the image */
+    width: 100%; /* Full width */
+    background: rgb(19, 19, 19); /* Or any color you prefer */
+    padding: 20px; /* Add some padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+    font-size: 1rem; /* Adjust font size for smaller screens */
   }
 }
+
+
 
 
 /************ Skills Css ************/
