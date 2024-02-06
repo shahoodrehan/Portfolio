@@ -12,7 +12,7 @@ function App() {
       <NavBar />
       <Banner />
       <Profile/>
-      <Skills />
+      
      
     </div>
   );
