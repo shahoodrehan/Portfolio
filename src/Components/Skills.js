@@ -1,42 +1,36 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import meter1 from '../Assets/img/meter1.svg';
-import meter2 from '../Assets/img/meter2.svg';
-import meter3 from '../Assets/img/meter3.svg';
-import { Carousel } from 'react-bootstrap';
+import colorSharp from "../Assets/img/color-sharp.png";
 
 export const Skills = () => {
-    const skills = [
-        { name: '.NET Development', percentage: 25 },
-        { name: 'Web Development', percentage: 90 },
-        { name: 'WordPress Development', percentage: 70 },
-        { name: 'Backend Development', percentage: 85 },
-        { name: 'Frontend Development', percentage: 95 },
-    ];
+    const scrollRef = useRef(null);
 
-    const responsive = {
-        superLargeDesktop: {
-            breakpoint: { max: 4000, min: 3000 },
-            items: 5
-        },
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 3
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 2
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1
+
+
+    const scroll = (direction) => {
+        if (direction === 'left') {
+            scrollRef.current.scrollBy({ left: -500, behavior: 'smooth' });
+        } else {
+            scrollRef.current.scrollBy({ left: 500, behavior: 'smooth' });
         }
     };
+    const skills = [
+        { name: 'ASP .NET Development', percentage: 80 },
+        { name: '.NET CORE Development', percentage: 95 },
+        { name: 'API Development', percentage: 85 },
+        { name: 'Web Development', percentage: 80 },
+        { name: 'WordPress Development', percentage: 70 },
+        { name: 'Database Management', percentage: 85 },
+        { name: 'Frontend Development', percentage: 30 },
+
+
+    ];
+
 
     return (
         <section className="skill" id="skills">
-            {/* ... */}
+
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -46,22 +40,50 @@ export const Skills = () => {
                                 My Versatile Skillset for Software Development Excellence.
                                 <br /> Here are some of my skills:
                             </p>
-                            <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                                {skills.map((skill, index) => (
-                                    <div className="item" key={index}>
-                                        <CircularProgressbar
-                                            value={skill.percentage}
-                                            text={`${skill.percentage}%`}
-                                            strokeWidth={10}
-                                        />
-                                        <h5>{skill.name}</h5>
+                            <div className='skill-section scrollbar-hide '>
+
+                                <div className=' inner'>
+                                    <button
+                                        onClick={() => scroll('left')}
+                                        className='b1'
+                                    >
+                                        {'<'}
+                                    </button>
+
+                                    <div className='skill-slider ' ref={scrollRef}>
+
+                                        {skills.map((skill, index) => (
+                                            <div className="item" key={index} style={{ width: 150, height: 500 }}>
+                                                <CircularProgressbar
+                                                    value={skill.percentage}
+                                                    text={`${skill.percentage}%`}
+                                                    strokeWidth={10}
+                                                 
+                                                />
+
+
+
+                                                <h5>{skill.name}</h5>
+                                            </div>
+                                        ))}
+
                                     </div>
-                                ))}
-                            </Carousel>
+
+                                    <button
+                                        onClick={() => scroll('right')}
+                                        className='b2'
+                                    >
+                                        {'>'}
+                                    </button>
+                                </div>
+
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <img className="background-image" src={colorSharp} alt="Image" />
         </section>
     );
 };

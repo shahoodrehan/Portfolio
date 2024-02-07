@@ -8,7 +8,11 @@ import navIcon2 from '../Assets/img/facebook.svg';
 import navIcon3 from '../Assets/img/instagram.svg';
 import navIcon4 from '../Assets/img/gmail.svg';
 import navIcon5 from '../Assets/img/github.png';
-
+import { HashLink } from 'react-router-hash-link';
+import {
+    BrowserRouter as Router
+  } from "react-router-dom";
+  
 
 export const NavBar = () => {
 
@@ -35,6 +39,7 @@ export const NavBar = () => {
     }
 
     return (
+        <Router>
         <Navbar expand="md" className={scroll ? "scrolled" : ""}>
             <Container>
                 <Navbar.Brand href="/">
@@ -54,13 +59,16 @@ export const NavBar = () => {
                             <a id="github" href="https://github.com/shahoodrehan"><img src={navIcon5} alt="" /></a>
                             <a id="linkedIn" href="https://www.linkedin.com/in/muhammad-shahood-rehan-76484226a/"><img src={navIcon1} alt="" /></a>
                             <a id="gmail" href="mailto:shahoodrehan57@gmail.com"><img src={navIcon4} alt="" /></a>
-                            <a id= "facebook" href="#"><img src={navIcon2} alt="" /></a>
+                            <a id="facebook" href="https://www.facebook.com/profile.php?id=100017072890483&mibextid=2JQ9oc"><img src={navIcon2} alt="" /></a>
                             <a id="instagram" href="https://www.instagram.com/shahood.rehan?igsh=MTRra2U2OXM2emU3dA=="><img src={navIcon3} alt="" /></a>
-                            </div>
-                        <button className="vvd" onClick={() => console.log('connect')}><span>'Let's connect'</span> </button>
+                        </div>
+                        <HashLink to='#connect'>
+                            <button className="vvd"><span>Let’s Connect</span></button>
+                        </HashLink>
                     </span>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
+        </Router>
     );
 }

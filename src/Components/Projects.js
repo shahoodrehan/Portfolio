@@ -1,11 +1,11 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../Assets/img/project-img1.png";
+import projImg2 from "../Assets/img/project-img2.png";
+import projImg3 from "../Assets/img/project-img3.png";
 import projImg4 from "../Assets/img/project-img4.png";
 import projImg5 from "../Assets/img/project-img5.png.jpg";
-import colorSharp2 from "../assets/img/color-sharp2.png";
+import colorSharp2 from "../Assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -37,11 +37,7 @@ export const Projects = () => {
             description: "Linux + Ubuntu",
             imgUrl: projImg4,
         },
-        {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
-        },
+       
     ];
 
     return (
