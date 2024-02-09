@@ -508,7 +508,8 @@ left: 50px;
 /**** Skills Css ****/
 .skill {
   margin-top: 10%;
-  padding-left: 40px;
+  padding-left: 10px;
+  padding-right: 5px;
   width: 85rem;
 margin-bottom: 5%;
 margin-left: 6%;
@@ -524,11 +525,15 @@ margin-left: 6%;
 }
 
 .skill-bx {
-  background: #151515;
+  background:#151515; 
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
+  padding-top: 70px ;
+  padding-bottom: 70px;
+  padding-right: 60px;
+  padding-left: -20px;
   margin-top: -60px;
+
   width: 100%; /* Set to 100% to take the full width */
   display: block; /* Change to block to allow for width adjustment */
   overflow: hidden;
@@ -544,16 +549,20 @@ margin-left: 6%;
    font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
+  padding-bottom: 25px;
   
 }
 .skill-section{ 
   height: 15rem;
  margin-bottom: 10px;
- margin-right: 10rem; 
- margin-left: 10rem; 
+margin-left: -5px;
+
+ width: 70%;
 }
 .item h5{
   padding-top: 15px !important;
+  font-size: 18px;
+  text-align: start;
 }
 .skill-section .inner
 {
@@ -567,7 +576,7 @@ margin-left: 6%;
   position: absolute;
   background: #151515;
   color: #fff;
-  left: -70px;
+  left: -90px;
   top:60px;
   text-align: center;
 }
@@ -575,14 +584,11 @@ margin-left: 6%;
 {
   position: absolute;
   top:60px;
-  right: -60px;
+  right: -1px;
   background: #151515;
   color: #fff;
-
   border-radius: 100%;
   text-align: center;
-  
-
 }
 .skill-slider { 
   display: flex;
@@ -605,8 +611,8 @@ margin-left: 6%;
     width: 78rem;
   }
   .skill-section{    
-   margin-right: 20rem; 
-   margin-left: 20rem; 
+   margin-right: 10rem; 
+   margin-left: 10rem; 
   }
   
   
