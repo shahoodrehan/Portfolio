@@ -424,7 +424,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .about-heading {
   font-weight: 700;
   font-family: 'Centra', sans-serif !important;
-  margin-left: 2%;
+  
 
 }
 
@@ -477,6 +477,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   text-align: left;
 left: 50px;
+text-align: justify;
   
   position: relative;
   overflow: hidden;
@@ -551,8 +552,8 @@ margin-top: 5%;
     border-radius: 50%; /* If you want a circular image */
   }
  .profile-info {
-   margin-left: 10px;
-   margin-top: 20px;
+   margin-left: -40px;
+   padding-top: 50px;
 
   }
 
@@ -569,7 +570,7 @@ margin-top: 5%;
   padding-right: 5px;
   width: 85rem;
 margin-bottom: 5%;
-margin-left: 6%;
+margin-left: 5%;
 
 }
 .background-image {
@@ -617,7 +618,7 @@ margin-left: 30%;
   height: 15rem;
   margin-bottom: 10px;
 
- width: 80%;
+ width: 88%;
 }
 .item h5{
   padding-top: 15px !important;
@@ -738,12 +739,21 @@ margin-left: 30%;
 }
 @media only screen and (max-width: 756px) {
   .skill {
-    width: 40rem;
+    width: 43rem;
     margin-left:10px;
+    padding-left: 50px;
   }
   .skill-section{    
    margin-right: 8rem; 
-   margin-left: 8rem; 
+   padding-left: 50px;
+   
+   width:20rem;
+  }
+  .skill-section .inner{
+    padding-right: 8px;
+  }
+  .skill-slider{
+    margin-right: 19px;
   }
   
   
