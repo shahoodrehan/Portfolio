@@ -16,21 +16,25 @@ export const Projects = () => {
             title: "DoorDash - ECommerce Delivery Platform",
             description: ".NET + React",
             imgUrl: projImg5,
+            githubUrl: "https://github.com/shahoodrehan/ECommerceWebApplication--DoorDash"
         },
         {
             title: "Banking Management System",
             description: "Java + Swing",
             imgUrl: projImg1,
+            githubUrl: "https://github.com/shahoodrehan/Banking-Management-System"
         },
         {
             title: "Airline Managment System",
             description: ".NET + WinForms",
             imgUrl: projImg3,
+            githubUrl: "https://github.com/shahoodrehan/ABS-Airline-Management-System"
         },
         {
             title: "Fractional Knapsack",
             description: "C# + WinForms",
             imgUrl: projImg2,
+            githubUrl: "https://github.com/shahoodrehan/Fractional-Knapsack"
         },
         
        
@@ -60,11 +64,12 @@ export const Projects = () => {
                                                 <Row>
                                                     {
                                                         projects.map((project, index) => {
-                                                            return (
+                                                            return (    
                                                                 <ProjectCard
-                                                                    key={index}
-                                                                    {...project}
-                                                                />
+                                                                key={index}
+                                                                {...project} 
+                                                                onClick={() => window.open(project.githubUrl, '_blank')}
+                                                            />
                                                             )
                                                         })
                                                     }
