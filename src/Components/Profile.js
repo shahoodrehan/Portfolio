@@ -27,7 +27,7 @@ const Profile = () => {
             <Card.Body>
               <Card.Title className="card-title">Muhammad Shahood Rehan <br /> Software Engr.</Card.Title>
               <Card.Text>
-                <p><strong>Birthday:</strong> 24 January, 2004</p>
+                <p><strong>Phone:</strong> +92 336 2594836</p>
                 <p><strong>Location:</strong> Karachi, Pakistan</p>
                 <p><strong>Email:</strong> shahoodrehan57@gmail.com</p>
               </Card.Text>

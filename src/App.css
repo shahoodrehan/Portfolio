@@ -314,19 +314,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
   /* Adjust padding and font size for smaller devices */
   nav.navbar .navbar-nav .nav-link.navbar-link {
-    padding: 0 15px;
-    font-size: 14px;
+    padding: 0 14px;
+    font-size: 16px;
   }
 
   .social-icon a {
-    width: 28px;
-    height: 28px;
+    width: 25px;
+    height: 25px;
   }
 
   .navbar-text button {
     padding: 10px 20px;
-    font-size: 14px;
-    margin-left: 110px; /* Adjust this value as needed */
+    font-size: 12px;
+    margin-right: 20px;
+    margin-left: 70px; /* Adjust this value as needed */
   }
 }
 
@@ -403,28 +404,36 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 @media screen and (max-width: 768px) {
+  /* Adjustments for the image in the banner for smaller screens */
   .banner img {
-    max-width: 60%;
-    /* Adjust the maximum width for smaller screens */
-    height: auto;
-    /* Let the height adjust proportionally */
-    top: 28%;
-    /* Remove the top position */
+    max-width: 60%; /* Adjust the maximum width for smaller screens */
+    height: auto; /* Let the height adjust proportionally */
+    top: 28%; /* Remove the top position */
     /* Adjust the left position or use another value as needed */
-    right: 0;
-    /* Remove the right position */
+    right: 0; /* Remove the right position */
   }
+.banner p{
+  text-align:center;
+  padding-top: 4px;
+}
+.banner h1{
+  font-size:40px;
+  font-weight: 700;
+  padding: 0px 10px;
+}
+.banner button{
+  padding-left: 10px;
+}
 }
 
+/* Keyframes for the updown animation */
 @keyframes updown {
   0% {
     transform: translateY(-20px);
   }
-
   50% {
     transform: translateY(20px);
   }
-
   100% {
     transform: translateY(-20px);
   }
@@ -562,37 +571,48 @@ section .skill {
   margin-top: 10%;
 }
 
-
 @media (max-width: 768px) {
+  /* Adjustments for the profile card */
   .profile-card {
     position: relative;
-    /* Set the position relative to allow absolute positioning inside */
-    top: 2rem;
-    /* Give enough space for the profile info to fit under the image */
+    top: 1rem; /* Give enough space for the profile info to fit under the image */
   }
-
-  section.skill {
-    margin-top: 10rem;
-    margin-bottom: 4rem;
+  .profile-info .hire-me{
+    margin-left: 50px;
   }
-
-  .profile-card .img {
-    width: 100%;
-    /* Make image full width */
-    height: auto;
-    /* Maintain aspect ratio */
-    border-radius: 50%;
-    /* If you want a circular image */
+  .profile-info .download-cv{
+    margin-top: 5%;
+    margin-left: 10px;
   }
-
-  .profile-info {
-    margin-left: -40px;
-    padding-top: 50px;
-
+  .about-heading{
+    margin-left: 25%;
   }
-
-
+.main-container{
+  margin-top: 1rem;
 }
+  /* Adjustments for the image in the profile card */
+  .profile-card .img {
+    width: 100%; /* Make image full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* If you want a circular image */
+  }
+
+  /* Adjustments for the profile info */
+  .profile-info {
+    margin-left: -50px; /* Adjust the margin to fit the profile info properly */
+    padding-top: 50px; /* Add some top padding to align content properly */
+  }
+ 
+
+  /* Adjustments for the skill section */
+  section.skill {
+    margin-top: 8rem; /* Adjust the margin-top for better spacing */
+    margin-bottom: 4rem; /* Add margin-bottom for better spacing */
+  }
+}
+
+
+
 
 /***skills css***/
 .skill {
@@ -1283,9 +1303,15 @@ margin-left: 30%;
     width: 50%;
     /* Adjust as needed */
   }
+  .footer .social-icon{
+    margin-left: 21%;
+    margin-right: 60px;
+    margin-top: 1rem;
+  }
 
   .footer p {
     font-size: 12px;
+    margin-bottom: 0;
     /* Adjust as needed */
   }
 }
