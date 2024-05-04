@@ -278,8 +278,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     /* Adjust this value as needed */
   }
 
-
-
   nav.navbar .navbar-nav .nav-link.navbar-link {
     padding: 0 20px;
     font-size: 16px;
@@ -293,7 +291,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .navbar-text button {
     padding: 12px 24px;
     font-size: 16px;
-    margin-left: 160px;
+    margin-left: 160px; /* Adjust this value as needed */
   }
 }
 
@@ -313,7 +311,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
     top: 7px;
   }
+
+  /* Adjust padding and font size for smaller devices */
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    padding: 0 15px;
+    font-size: 14px;
+  }
+
+  .social-icon a {
+    width: 28px;
+    height: 28px;
+  }
+
+  .navbar-text button {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-left: 110px; /* Adjust this value as needed */
+  }
 }
+
 
 
 /************ Banner Css ************/
