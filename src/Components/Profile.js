@@ -36,7 +36,7 @@ const Profile = () => {
         </Col>
         <Col xl={7} className="profile-info">
           <h1 className="about-heading">ABOUT ME</h1><br/>
-          <p>I am a dedicated Undergraduate Software Engineer with over 6 months of industry experience and expertise in <strong> C# .NET ASP .NET CORE, Microsoft Entity Framework, ADO.NET,</strong> and various web technologies, allowing me to create robust web applications and APIs. On the front-end, I excel in crafting engaging user interfaces using <strong> HTML5, CSS, JS, React.js and WordPress Development </strong>.</p>
+          <p>I am a dedicated Undergraduate Software Engineer with over 7 months of industry experience and expertise in <strong> C# .NET ASP .NET CORE, Microsoft Entity Framework, ADO.NET,</strong> and various web technologies, allowing me to create robust web applications and APIs. On the front-end, I excel in crafting engaging user interfaces using <strong> HTML5, CSS, JS, React.js and WordPress Development </strong>.</p>
 <br/>
 <p> Backed by industry experience and a commitment to continuous learning, I eagerly embrace new challenges and am keen to collaborate on exciting projects. Let's connect and explore the potential for us to work together in creating exceptional digital experiences</p>
           <Button className="hire-me" onClick={''}><img className='hire-icon' src={hireIcon} alt="Hire me" /> Hire me</Button>
